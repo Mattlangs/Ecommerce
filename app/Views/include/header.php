@@ -37,7 +37,7 @@
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-<!-- script-for sticky-nav -->
+
 	<script>
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
@@ -52,7 +52,7 @@
 		 
 	});
 	</script>
-<!-- //script-for sticky-nav -->
+
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">

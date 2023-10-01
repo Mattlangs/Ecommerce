@@ -14,7 +14,7 @@ class ProductModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ['name', 'price', 'category_id','filename','quantity'];
-    // ProductModel.php
+   
     
 public function getProductsByCategory($category)
 {

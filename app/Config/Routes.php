@@ -16,8 +16,9 @@ $routes->get('/forgot-password', 'Home::forgotPassword');
 $routes->post('/resetpassword', 'Home::resetPassword');
 $routes->get('/main', 'Home::productList');
 $routes->get('home/getProductsByCategory/(:num)', 'Home::getProductsByCategory/$1');
-$routes->get('/admin', 'AdminController::login');
-$routes->post('/admin', 'AdminController::login');
+$routes->get('/adminlog', 'AdminController::login');
+$routes->post('/adminlog', 'AdminController::login');
+$routes->post('/admin', 'AdminController::index');
 
 
 

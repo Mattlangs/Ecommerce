@@ -83,7 +83,7 @@ $(document).ready(function(){
     );
 });
 </script>
-<!-- here stars scrolling icon -->
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -99,7 +99,7 @@ $(document).ready(function(){
 								
 			});
 	</script>
-<!-- //here ends scrolling icon -->
+
 <script src="js/minicart.js"></script>
 <script>
 		paypal.minicart.render();
@@ -110,7 +110,7 @@ $(document).ready(function(){
 				total = 0,
 				i;
 
-			// Count the number of each item in the cart
+			
 			for (i = 0; i < len; i++) {
 				total += items[i].get('quantity');
 			}
