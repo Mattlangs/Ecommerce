@@ -28,9 +28,10 @@ $(document).ready(function () {
        
         $.ajax({
             type: 'GET',
-            url: '<?= base_url('home/getProductsByCategory') ?>/' + categoryId, 
+            url: '<?= base_url('Homes/getProductsByCategory') ?>/' + categoryId, 
             success: function (data) {
                 // Update the content area with the loaded products   $('#content').html(data);
+                $('#content').html(data);
             },
             error: function (xhr, status, error) {
                 console.error(error);

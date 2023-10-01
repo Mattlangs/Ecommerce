@@ -15,7 +15,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="<?=base_url() ?>images/<?=$product['filename'];?>" alt=" " class="img-responsive" /></a>
+											<a href="#"><img src="<?=base_url() ?>images/<?=$product['filename'];?>" alt=" " class="img-responsive" /></a>
 											<p><?php echo $product['name'];?></p>
 											<h4>₱<?php echo $product['price'];?> </h4><h4><?php echo $product['quantity'];?> stock</h4>
 										</div>
