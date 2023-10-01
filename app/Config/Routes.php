@@ -16,9 +16,19 @@ $routes->get('/forgot-password', 'Homes::forgotPassword');
 $routes->post('/resetpassword', 'Homes::resetPassword');
 $routes->get('/main', 'Homes::productList');
 $routes->get('Homes/getProductsByCategory/(:num)', 'Homes::getProductsByCategory/$1');
-$routes->get('/adminlog', 'AdminController::login');
-$routes->post('/adminlog', 'AdminController::login');
-$routes->post('/admin', 'AdminController::index');
+$routes->get('/adminlog', 'AdminController::register');
+$routes->post('/adminlog', 'AdminController::register');
+$routes->get('/admin', 'AdminController::index');  
+$routes->get('/Inventory', 'AdminController::Inventory');  
+$routes->get('/product', 'AdminController::product');
+$routes->post('/product', 'AdminController::product'); 
+$routes->get('/AdminController/addproduct', 'AdminController::addProduct');
+$routes->post('/AdminController/addproduct', 'AdminController::addProduct'); 
+$routes->get('/AdminController/editproduct', 'AdminController::editProduct');
+$routes->post('/AdminController/editproduct', 'AdminController::editProduct'); 
+$routes->get('/AdminController/deleteproduct', 'AdminController::deleteProduct');
+$routes->post('/AdminController/deleteproduct', 'AdminController::deleteProduct'); 
+
 
 
 

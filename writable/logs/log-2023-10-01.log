@@ -1271,3 +1271,191 @@ in APPPATH\Controllers\Homes.php on line 126.
 CRITICAL - 2023-10-01 14:05:39 --> 'break' not in the 'loop' or 'switch' context
 in APPPATH\Controllers\Homes.php on line 125.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-01 14:38:37 --> Undefined variable $data
+in APPPATH\Controllers\AdminController.php on line 34.
+ 1 APPPATH\Controllers\AdminController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\Ecommerce\\app\\Controllers\\AdminController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-01 14:49:19 --> mysqli_sql_exception: Column 'name' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(27): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-01 14:49:19 --> Column 'name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 15:34:02 --> Invalid file: "AllAmin/Inventory.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AllAmin/Inventory.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('AllAmin/Inventory', [], true)
+ 3 APPPATH\Controllers\AdminController.php(16): view('AllAmin/Inventory')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Inventory()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 15:34:15 --> Invalid file: "AllAmin/Inventory.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('AllAmin/Inventory.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('AllAmin/Inventory', [], true)
+ 3 APPPATH\Controllers\AdminController.php(16): view('AllAmin/Inventory')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Inventory()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 15:57:33 --> Undefined variable $products
+in APPPATH\Views\AllAdmin\Inventory.php on line 2.
+ 1 APPPATH\Views\AllAdmin\Inventory.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('AllAdmin/Inventory', [], true)
+ 5 APPPATH\Controllers\AdminController.php(17): view('AllAdmin/Inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 15:58:56 --> Undefined variable $productModel
+in APPPATH\Views\AllAdmin\Inventory.php on line 2.
+ 1 APPPATH\Views\AllAdmin\Inventory.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productModel', 'C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('AllAdmin/Inventory', [], true)
+ 5 APPPATH\Controllers\AdminController.php(17): view('AllAdmin/Inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 16:04:29 --> Undefined variable $products
+in APPPATH\Views\AllAdmin\Inventory.php on line 2.
+ 1 APPPATH\Views\AllAdmin\Inventory.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('AllAdmin/Inventory', [], true)
+ 5 APPPATH\Controllers\AdminController.php(18): view('AllAdmin/Inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 16:09:03 --> Undefined variable $products
+in APPPATH\Views\AllAdmin\Inventory.php on line 2.
+ 1 APPPATH\Views\AllAdmin\Inventory.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Ecommerce\\app\\Views\\AllAdmin\\Inventory.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('AllAdmin/Inventory', [], true)
+ 5 APPPATH\Controllers\AdminController.php(18): view('AllAdmin/Inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 16:16:03 --> Undefined array key "image"
+in APPPATH\Views\include\product_list.php on line 18.
+ 1 APPPATH\Views\include\product_list.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\laragon\\www\\Ecommerce\\app\\Views\\include\\product_list.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Ecommerce\\app\\Views\\include\\product_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/product_list', [], true)
+ 5 APPPATH\Controllers\Homes.php(152): view('include/product_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Homes->getProductsByCategory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-01 16:16:04 --> Undefined array key "image"
+in APPPATH\Views\include\product_list.php on line 18.
+ 1 APPPATH\Views\include\product_list.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\laragon\\www\\Ecommerce\\app\\Views\\include\\product_list.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Ecommerce\\app\\Views\\include\\product_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/product_list', [], true)
+ 5 APPPATH\Controllers\Homes.php(152): view('include/product_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Homes->getProductsByCategory('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-01 16:16:29 --> mysqli_sql_exception: Unknown column 'filename' in 'field list' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `name`, ...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Ecommerce\app\Models\ProductModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Ecommerce\app\Controllers\Homes.php(17): App\Models\ProductModel->getProductsByCategory(1)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\Homes->index()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-01 16:16:29 --> Unknown column 'filename' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `price`, `filename`, `quantity`
+FROM `products`
+WHERE `category_id` = :category_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ProductModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Homes.php(17): App\Models\ProductModel->getProductsByCategory(1)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Homes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-01 16:16:37 --> mysqli_sql_exception: Unknown column 'filename' in 'field list' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `name`, ...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Ecommerce\app\Models\ProductModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Ecommerce\app\Controllers\Homes.php(17): App\Models\ProductModel->getProductsByCategory(1)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\Homes->index()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-01 16:16:37 --> Unknown column 'filename' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `price`, `filename`, `quantity`
+FROM `products`
+WHERE `category_id` = :category_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ProductModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Homes.php(17): App\Models\ProductModel->getProductsByCategory(1)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Homes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
