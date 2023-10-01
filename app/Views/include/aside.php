@@ -1,12 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <div class="banner">
 		<div class="w3l_banner_nav_left">
 			<nav class="navbar nav_bottom">
@@ -20,23 +12,12 @@
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-<!-- existing HTML code for navigation -->
-<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-    <ul class="nav navbar-nav nav_1">
-        <!-- Replace this part with the PHP code -->
-        <?php if (!empty($categories)): ?>
-            <?php foreach ($categories as $category): ?>
-                <li>
-                    <a href="<?= base_url('products?category=' . $category['name']) ?>">
-                        <?= $category['name'] ?>
-                    </a>
-                </li>
-            <?php endforeach; ?>
-        <?php endif; ?>
-    </ul>
-</div><!-- /.navbar-collapse -->
-<!-- /.navbar-collapse -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href=""><?php include 'category.php'; ?></a></li>
+					</ul>
+				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-</body>
-</html>
+		</div>
+		

@@ -4,26 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProductModel extends Model
+class AdminModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'products';
-    protected $primaryKey       = 'id';
+    protected $table            = 'admins';
+    protected $primaryKey       = 'admin_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['name', 'price', 'category_id','filename','quantity'];
-    // ProductModel.php
-    
-public function getProductsByCategory($category)
-{
-    return $this->select('name, price,filename,quantity')
-    ->where('category_id', $category)
-    ->findAll();
-}
-
-
+    protected $allowedFields    = ['name','email','password'];
 
     // Dates
     protected $useTimestamps = false;
