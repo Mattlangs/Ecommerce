@@ -20,14 +20,18 @@ $routes->get('/adminlog', 'AdminController::register');
 $routes->post('/adminlog', 'AdminController::register');
 $routes->get('/admin', 'AdminController::index');  
 $routes->get('/Inventory', 'AdminController::Inventory');  
-$routes->get('/product', 'AdminController::product');
-$routes->post('/product', 'AdminController::product'); 
-$routes->get('/AdminController/addproduct', 'AdminController::addProduct');
-$routes->post('/AdminController/addproduct', 'AdminController::addProduct'); 
-$routes->get('/AdminController/editproduct', 'AdminController::editProduct');
-$routes->post('/AdminController/editproduct', 'AdminController::editProduct'); 
-$routes->get('/AdminController/deleteproduct', 'AdminController::deleteProduct');
-$routes->post('/AdminController/deleteproduct', 'AdminController::deleteProduct'); 
+$routes->get('/view', 'AdminController::product'); 
+$routes->get('/admin/product', 'AdminController::product');
+$routes->get('/admin/editProduct/(:num)', 'AdminController::editProduct/$1');
+$routes->post('/admin/editProduct/(:num)', 'AdminController::editProduct/$1'); 
+
+$routes->get('/admin/deleteProduct/(:num)', 'AdminController::deleteProduct/$1');
+$routes->post('/admin/deleteProduct/(:num)', 'AdminController::deleteProduct/$1');
+
+$routes->get('/ProductAdd', 'AdminController::addProduct');
+$routes->post('/ProductAdd1', 'AdminController::addProduct');
+
+
 
 
 

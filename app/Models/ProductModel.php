@@ -13,12 +13,12 @@ class ProductModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['name', 'price', 'category_id','image','quantity'];
+    protected $allowedFields    = ['name', 'price', 'category_id','image','quantity','description'];
    
     
 public function getProductsByCategory($category)
 {
-    return $this->select('name, price,image,quantity')
+    return $this->select('name, price,image,quantity,description')
     ->where('category_id', $category)
     ->findAll();
 }

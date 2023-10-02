@@ -25,6 +25,7 @@ class Homes extends BaseController
         $data = []; 
 
         if ($this->request->getMethod() === 'post') {
+            
             $model = new UserModel();
             $username = $this->request->getVar('Username');
             $password = $this->request->getVar('Password');
@@ -36,6 +37,7 @@ class Homes extends BaseController
             if ($user && password_verify($password, $user['password'])) {
               
                 return redirect()->to('/main'); 
+
             } else {
                 
                 $data['error'] = 'Invalid username or password'; 
