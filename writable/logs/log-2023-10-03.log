@@ -1,0 +1,468 @@
+CRITICAL - 2023-10-03 07:10:26 --> Undefined variable $data
+in APPPATH\Controllers\Homes.php on line 73.
+ 1 APPPATH\Controllers\Homes.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\Ecommerce\\app\\Controllers\\Homes.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Homes->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 07:46:32 --> mysqli_sql_exception: Column 'email' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 07:46:32 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 07:46:59 --> mysqli_sql_exception: Column 'email' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 07:46:59 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 07:47:36 --> mysqli_sql_exception: Column 'email' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 07:47:36 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 07:49:46 --> mysqli_sql_exception: Column 'email' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 07:49:46 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 07:50:27 --> mysqli_sql_exception: Column 'email' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 07:50:27 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 07:52:15 --> mysqli_sql_exception: Column 'email' cannot be null in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->register()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 07:52:15 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admins` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 09:03:30 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(66): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->login()
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-03 09:03:30 --> Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admins`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(66): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 09:04:59 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->login()
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-03 09:04:59 --> Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admins`
+WHERE `username` IS NULL
+OR `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 09:05:03 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->login()
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-03 09:05:03 --> Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admins`
+WHERE `username` IS NULL
+OR `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 09:05:38 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->login()
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-03 09:05:38 --> Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admins`
+WHERE `username` IS NULL
+OR `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 09:06:30 --> mysqli_sql_exception: Unknown column 'user_name' in 'where clause' in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->login()
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-10-03 09:06:30 --> Unknown column 'user_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admins`
+WHERE `user_name` IS NULL
+OR `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-03 09:18:38 --> Invalid file: "signin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signin.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('signin', [], true)
+ 3 APPPATH\Controllers\AdminController.php(54): view('signin')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-03 09:18:38 --> Invalid file: "signin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signin.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('signin', [], true)
+ 3 APPPATH\Controllers\AdminController.php(54): view('signin')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+CRITICAL - 2023-10-03 09:41:36 --> Undefined variable $data
+in APPPATH\Controllers\Homes.php on line 73.
+ 1 APPPATH\Controllers\Homes.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\Ecommerce\\app\\Controllers\\Homes.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Homes->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 09:59:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)) in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(162): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->addProduct()
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 09:59:02 --> Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`name`, `price`, `quantity`, `description`, `category_id`) VALUES (:name:, :price:, :quantity:, :description:, :category_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(162): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->addProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 12:04:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)) in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(211): CodeIgniter\Model->update('8', Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->updateProduct('8')
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 12:04:59 --> Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `products` SET `name` = :name:, `category_id` = :category_id:, `price` = :price:, `image` = :image:, `quantity` = :quantity:, `description` = :description:
+WHERE `products`.`id` IN :products.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AdminController.php(211): CodeIgniter\Model->update('8', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->updateProduct('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 12:04:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)) in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(211): CodeIgniter\Model->update('8', Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->updateProduct('8')
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 12:04:59 --> Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `products` SET `name` = :name:, `category_id` = :category_id:, `price` = :price:, `image` = :image:, `quantity` = :quantity:, `description` = :description:
+WHERE `products`.`id` IN :products.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AdminController.php(211): CodeIgniter\Model->update('8', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->updateProduct('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')
+ERROR - 2023-10-03 12:05:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)) in C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Ecommerce\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\laragon\www\Ecommerce\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\laragon\www\Ecommerce\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\laragon\www\Ecommerce\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\Ecommerce\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\Ecommerce\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\Ecommerce\app\Controllers\AdminController.php(211): CodeIgniter\Model->update('8', Array)
+#8 C:\laragon\www\Ecommerce\system\CodeIgniter.php(919): App\Controllers\AdminController->updateProduct('8')
+#9 C:\laragon\www\Ecommerce\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\Ecommerce\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\Ecommerce\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\Ecommerce\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-10-03 12:05:36 --> Cannot add or update a child row: a foreign key constraint fails (`lab3`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `products` SET `name` = :name:, `category_id` = :category_id:, `price` = :price:, `image` = :image:, `quantity` = :quantity:, `description` = :description:
+WHERE `products`.`id` IN :products.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AdminController.php(211): CodeIgniter\Model->update('8', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->updateProduct('8')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Ecommerce\\public\\index.php')

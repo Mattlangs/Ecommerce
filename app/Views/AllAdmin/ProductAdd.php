@@ -15,10 +15,8 @@
     }
     ?>
     <div class="container mt-4">
-      
-
         <!-- Add Product Form -->
-        <form id="addProductForm" method="post" action="<?= site_url('ProductAdd1'); ?>" class="mb-3">
+        <form id="addProductForm" method="post" action="<?= site_url('ProductAdd'); ?>" class="mb-3">
             <h3>Add Product</h3>
             <div class="form-group">
                 <label for="productName">Product Name</label>
@@ -40,12 +38,18 @@
                 <label for="productDescription">Product Description</label>
                 <input type="text" class="form-control" id="productDescription" name="productDescription" required>
             </div>
+            <div class="form-group">
+    <label for="productCategory">Product Category</label>
+    <input type="text" class="form-control" id="productCategory" name="productCategory" required>
+</div>
+
+
             <button type="submit" class="btn btn-primary">Add Product</button>
         </form>
 
         <?php foreach ($products as $product): ?>
             <!-- Edit Product Buttons -->
-            <button class="btn btn-warning" data-toggle="modal" data-target="#editProductModal" data-product-id="<?= $product['id']; ?>" data-product-name="<?= $product['name']; ?>" data-product-price="<?= $product['price']; ?>" data-product-quantity="<?= $product['quantity']; ?>" data-product-description="<?= $product['description']; ?>">Edit Product</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#editProductModal" data-product-id="<?= $product['id']; ?>" data-product-name="<?= $product['name']; ?>" data-product-price="<?= $product['price']; ?>" data-product-quantity="<?= $product['quantity']; ?>" data-product-description="<?= $product['description']; ?>" data-product-category="<?= $product['category']; ?>">Edit Product</button>
         <?php endforeach; ?>
     </div>
 

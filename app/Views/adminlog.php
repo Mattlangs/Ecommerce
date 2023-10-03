@@ -7,45 +7,37 @@
         .hidden {
             display: none;
         }
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
     </style>
 </head>
 <body>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <div id="login-form" class="">
-                <h2 class="text-center">Login</h2>
-                <?php if (isset($error)): ?>
-                <div class="alert alert-danger">
-                    <?= $error ?>
+<div class="container">
+    <div class="center-container">
+        <div class="col-5">
+            <h2>Login</h2>
+            <?php if(session()->getFlashdata('msg')): ?>
+                <div class="alert alert-warning">
+                    <?= session()->getFlashdata('msg') ?>
                 </div>
-                <?php endif; ?>
-                <form action="<?= base_url('admin') ?>" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="name" placeholder="name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" name="password" placeholder="password" required>
-                    </div>
-                    <div class="form-group">
-                    <input type="email" class="form-control" name="Email" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group text-center">
-                        <input type="submit" class="btn btn-primary" value="Login">
-                    </div>
-                </form>
+            <?php endif; ?>
+            <form action="<?php echo base_url(); ?>signin" method="post">
+                <div class="form-group mb-3">
+                    <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control">
                 </div>
-
-                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-    function showLoginForm() {
-        document.getElementById('login-form').classList.remove('hidden');
-        document.getElementById('signup-form').classList.add('hidden');
-        document.getElementById('forgotpassword-form').classList.add('hidden');
-    }
-</script>
+                <div class="form-group mb-3">
+                    <input type="password" name="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <button type="submit" class="btn btn-success btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

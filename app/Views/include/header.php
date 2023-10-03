@@ -24,8 +24,7 @@
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="include/login">Login</a></li> 
-								<li><a href="include/login">Sign Up</a></li>
+								<li><a href="\adminlog">LoginAdmin</a></li> 	
 							</ul>
 						</div>                  
 					</div>	

@@ -1,7 +1,6 @@
 
 <div class="banner">
 <div class="w3l_banner_nav_right">
-
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
 				<h3 class="w3l_fruit">Fruits & Vegetables</h3>
 				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
