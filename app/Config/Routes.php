@@ -19,15 +19,15 @@ $routes->post('/resetpassword', 'Homes::resetPassword');
 
 
 $routes->get('Homes/getProductsByCategory/(:num)', 'Homes::getProductsByCategory/$1');
-$routes->get('/admin', 'AdminController::index'); 
+$routes->get('/admin', 'AdminController::index',['filter'=>'authGuard']); 
 
 $routes->get('/login', 'AdminController::login');
 $routes->get('/logout', 'AdminController::logout'); 
 
 $routes->post('/signin', 'AdminController::LoginAuth');
-$routes->get('/Inventory', 'AdminController::Inventory');  
-$routes->get('/view', 'AdminController::product'); 
-$routes->get('/admin/product', 'AdminController::product');
+$routes->get('/Inventory', 'AdminController::Inventory',['filter'=>'authGuard']);  
+$routes->get('/view', 'AdminController::product',['filter'=>'authGuard']); 
+$routes->get('/admin/product', 'AdminController::product',['filter'=>'authGuard']);
 
 
 $routes->post('AdminController/updateProduct/(:num)', 'AdminController::updateProduct/$1');

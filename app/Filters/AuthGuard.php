@@ -25,11 +25,11 @@ class AuthGuard implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-      // $session = session();
+       $session = session();
             
-          ///  if (!$session->get('isLoggedIn')) {
-             //   return redirect()->to(base_url('/login'));
-          //  }
+            if (!$session->get('isLoggedIn')) {
+                return redirect()->to(base_url('/login'));
+           }
     }
 
     /**
